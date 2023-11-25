@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <div class="options">
+                <a href="#">Payment</a>
+                <a href="#">Complain</a>
+            </div>
+        </nav>
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="container">
+                <div class="newTitle">
+                    <div class="title">
+                        <p> <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                    </div>
+                </div>
+
+                <div class="container_text">
+                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem rerum accusantium possimus iste
+                        voluptas in adipisci commodi voluptates molestias numquam consequatur officiis, quas, laborum
+                        perferendis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem rerum accusantium
+                        possimus iste
+                        voluptas in adipisci commodi voluptates molestias numquam consequatur officiis, quas, laborum
+                    </h4>
+                </div>
+
+                <div class="button">
+                    <button type="button" class="btn btn-primary btn-lg" id="btn1">Admin</button>
+                    <button type="button" class="btn btn-primary btn-lg" id="btn2" onclick="openLoginModal()">Student</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Popup Form -->
+        <div id="loginModal" class="modal hide">
+            <div class="modal-content">
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+                <h2>Student Login</h2>
+                <form id="studentLoginForm">
+                    <div class="input-container">
+                        <input type="text" id="username" name="username" required>
+                        <label for="username">Username 🧑‍💻</label>
+                    </div>
+        
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password 🔒</label>
+                    </div>
+        
+                    <div class="remember-forgot">
+                        <label class="remember">
+                            <input type="checkbox" name="remember"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+        
+                    <button type="button" onclick="studentLogin()">Login</button>
+        
+                    <p class="no-account">Don't have an account? <a href="#">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
